@@ -1,59 +1,74 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Calculator</title>
-    <style type="text/css">
-        body { font-family: Arial, sans-serif; }
-        .calculator { text-align: center; padding: 20px; }
-        .display { background-color: #eee; padding: 10px; margin-bottom: 20px; font-size: 20px; min-height: 50px; }
-        .button { border: 1px solid #ccc; padding: 10px; margin: 5px; width: 50px; }
-    </style>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<style>
+body {
+  padding: 20px;
+}
+#result {
+  height: 60px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+.btn {
+  width: 20%;
+  height: 60px;
+  font-size: 20px;
+}
+</style>
 </head>
 <body>
-    <div class="calculator">
-        <div id="display" class="display"></div>
-        <div>
-            <button class="button" onclick="append('1')">1</button>
-            <button class="button" onclick="append('2')">2</button>
-            <button class="button" onclick="append('3')">3</button>
-            <button class="button" onclick="append('+')">+</button>
-        </div>
-        <div>
-            <button class="button" onclick="append('4')">4</button>
-            <button class="button" onclick="append('5')">5</button>
-            <button class="button" onclick="append('6')">6</button>
-            <button class="button" onclick="append('-')">-</button>
-        </div>
-        <div>
-            <button class="button" onclick="append('7')">7</button>
-            <button class="button" onclick="append('8')">8</button>
-            <button class="button" onclick="append('9')">9</button>
-            <button class="button" onclick="append('*')">*</button>
-        </div>
-        <div>
-            <button class="button" onclick="append('0')">0</button>
-            <button class="button" onclick="append('.')">.</button>
-            <button class="button" onclick="calculate()">=</button>
-            <button class="button" onclick="append('/')">/</button>
-        </div>
-        <button class="button" onclick="clearDisplay()">C</button>
-    </div>
-    <script>
-        let display = $('#display');
-        function append(value) {
-            display.text(display.text() + value);
-        }
-        function calculate() {
-            try {
-                display.text(eval(display.text()));
-            } catch {
-                display.text("Error");
-            }
-        }
-        function clearDisplay() {
-            display.text("");
-        }
-    </script>
+
+<div class="container">
+  <div id="result"></div>
+  <div class="row">
+    <button class="btn btn-default" onclick="append('1')">1</button>
+    <button class="btn btn-default" onclick="append('2')">2</button>
+    <button class="btn btn-default" onclick="append('3')">3</button>
+    <button class="btn btn-default" onclick="append('+')">+</button>
+  </div>
+  <div class="row">
+    <button class="btn btn-default" onclick="append('4')">4</button>
+    <button class="btn btn-default" onclick="append('5')">5</button>
+    <button class="btn btn-default" onclick="append('6')">6</button>
+    <button class="btn btn-default" onclick="append('-')">-</button>
+  </div>
+  <div class="row">
+    <button class="btn btn-default" onclick="append('7')">7</button>
+    <button class="btn btn-default" onclick="append('8')">8</button>
+    <button class="btn btn-default" onclick="append('9')">9</button>
+    <button class="btn btn-default" onclick="append('*')">*</button>
+  </div>
+  <div class="row">
+    <button class="btn btn-default" onclick="append('0')">0</button>
+    <button class="btn btn-default" onclick="clearAll()">C</button>
+    <button class="btn btn-default" onclick="calculate()">=</button>
+    <button class="btn btn-default" onclick="append('/')">/</button>
+  </div>
+</div>
+
+<script>
+var result = document.getElementById('result');
+function append(number) {
+  result.textContent += number;
+}
+function clearAll() {
+  result.textContent = '';
+}
+function calculate() {
+  try {
+    result.textContent = eval(result.textContent);
+  } catch {
+    result.textContent = 'Error';
+  }
+}
+</script>
+
 </body>
 </html>
