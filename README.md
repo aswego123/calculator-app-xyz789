@@ -1,37 +1,36 @@
 # Calculator-App-XYZ789
 
-Calculator-App-XYZ789 is a simple, user-friendly web-based calculator designed to perform basic arithmetic operations such as addition, subtraction, multiplication, and division. The project aims to provide a clean and easy-to-use interface for all users.
+A simple, efficient, and user-friendly calculator web application built to perform basic arithmetic operations including addition, subtraction, multiplication, and division. The application has a clean interface with buttons for numbers 0-9 and operation symbols. Results are displayed clearly for ease of use.
 
-This project is hosted on GitHub and you can access the repository via this [link](https://github.com/aswego123/calculator-app-xyz789). A live demo is also available [here](https://aswego123.github.io/calculator-app-xyz789/).
+## Live Demo
+
+The live application can be accessed [here](https://aswego123.github.io/calculator-app-xyz789/).
+
+## Repository
+
+The project repository can be found [here](https://github.com/aswego123/calculator-app-xyz789).
 
 ## Features
 
-The calculator app provides the following functionality:
-
-- Basic arithmetic operations: addition, subtraction, multiplication, division.
-- User-friendly interface with buttons for numbers 0-9 and operation symbols.
-- Clear and easy-to-read display of results.
+1. **Basic Arithmetic Operations**: The calculator can perform addition, subtraction, multiplication, and division operations.
+2. **User-friendly Interface**: The application has a clean and intuitive interface with labeled buttons for each operation.
+3. **Clear Output**: Results of calculations are displayed clearly at the top of the application.
 
 ## Setup Instructions
 
-As this is a web-based application, there are no specific setup instructions. Simply navigate to the [live demo](https://aswego123.github.io/calculator-app-xyz789/) to start using the calculator.
+No specific setup is required for this web application. Simply navigate to the [live demo link](https://aswego123.github.io/calculator-app-xyz789/) to start using the calculator.
 
 ## Usage Instructions
 
-To use the calculator:
+Enter the first number by clicking the appropriate buttons, choose the operation you want to perform, then enter the second number. Click the equals button to display the result. Use the clear button to reset the calculator for a new calculation.
 
-1. Click on the numbers and operation symbols to enter your calculation.
-2. Press the equals button to view the result.
-3. Use the clear button to reset the calculator and start a new calculation.
+## Technical Implementation
 
-## Technical Implementation Details
+The application is implemented using HTML, CSS, and JavaScript. HTML provides the basic structure, CSS is used for styling and layout, and JavaScript handles the calculation functionality and user interactions.
 
-The calculator app was implemented using HTML, CSS, and JavaScript. HTML was used for structuring the content of the web page, CSS for styling and layout, and JavaScript for implementing the calculator functionality. The calculator logic is based on the standard arithmetic order of operations.
+## License Information
 
-## License
-
-This project is licensed under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+This project is licensed under the terms of the MIT license. For more details, please see the [LICENSE](https://github.com/aswego123/calculator-app-xyz789/blob/main/LICENSE) file in the project repository.
 
 ---
-
-For any additional information or queries, please refer to the GitHub repository [here](https://github.com/aswego123/calculator-app-xyz789) or contact the project maintainers.
+For any additional information or queries, feel free to contact the project team.
